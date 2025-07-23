@@ -12,10 +12,14 @@
     <img src="liang.jpg" class="avatar" alt="Liang cute" />
     <button onclick="showWish()">🎁 Nhấn để xem lời chúc 🎁</button>
     <div id="message" class="hidden"></div>
-    <div class="music">
-      <iframe width="0" height="0" src="https://www.youtube.com/embed/S7KA4tQ483o?autoplay=1&loop=1&playlist=S7KA4tQ483o&mute=1" frameborder="0" allow="autoplay"></iframe>
-    </div>
+
+    <!-- Nhạc nền dùng file .mp3 -->
+    <audio autoplay loop>
+      <source src="birthday.mp3" type="audio/mpeg" />
+      Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
   </div>
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script>
@@ -24,4 +28,4 @@
     }, 5000);
   </script>
 </body>
-</html
+</html>
