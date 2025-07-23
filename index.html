@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chúc mừng sinh nhật Liang!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Chúc mừng sinh nhật Liang 🎉</h1>
+    <img src="liang.jpg" class="avatar" alt="Liang cute" />
+    <button onclick="showWish()">🎁 Nhấn để xem lời chúc 🎁</button>
+    <div id="message" class="hidden"></div>
+    <div class="music">
+      <iframe width="0" height="0" src="https://www.youtube.com/embed/S7KA4tQ483o?autoplay=1&loop=1&playlist=S7KA4tQ483o" frameborder="0" allow="autoplay"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    setInterval(() => {
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+    }, 5000);
+  </script>
+</body>
+</html>
